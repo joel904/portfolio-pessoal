@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Joel Cavalcante | Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-brand" href="sobre.html">Joel Cavalcante</a>
+    <ul class="nav-links">
+      <li><a href="sobre.html" class="nav-link">Sobre mim</a></li>
+      <li><a href="formacao.html" class="nav-link">Formação</a></li>
+      <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+      <li><a href="contato.html" class="nav-link active">Contato</a></li>
+      <li>
+        <button id="theme-toggle" onclick="toggleTheme()">
+          <i class="fa fa-sun-o"></i> Tema
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <aside class="sidebar show">
+      <div class="avatar">
+        <i class="fa fa-user"></i>
+      </div>
+      <h2>Joel Cavalcante</h2>
+      <p class="subtitle">Estudante de ADS</p>
+
+      <div class="info-list">
+        <p><i class="fa fa-briefcase"></i> Análise e Desenvolvimento de Sistemas</p>
+        <p><i class="fa fa-home"></i> Fortaleza-CE, Brasil</p>
+        <p><i class="fa fa-envelope"></i> jvalentim532@gmail.com</p>
+      </div>
+
+      <hr>
+
+      <h3><i class="fa fa-asterisk"></i> Skills</h3>
+      <div class="skill-label"><span>Java</span><span>15%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="15"></div></div>
+      <div class="skill-label"><span>Python</span><span>20%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="20"></div></div>
+      <div class="skill-label"><span>SQL</span><span>15%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="15"></div></div>
+      <div class="skill-label"><span>IA Generativa</span><span>80%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="80"></div></div>
+      <div class="skill-label"><span>VSCode</span><span>50%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="50"></div></div>
+
+      <hr>
+
+      <h3><i class="fa fa-globe"></i> Idiomas</h3>
+      <div class="skill-label"><span>Português</span><span>100%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="100"></div></div>
+      <div class="skill-label"><span>Inglês</span><span>50%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="50"></div></div>
+      <div class="skill-label"><span>Espanhol</span><span>40%</span></div>
+      <div class="bar-bg"><div class="bar" data-w="40"></div></div>
+    </aside>
+
+    <section class="content">
+
+      <!-- Informações de contato -->
+      <div class="card show">
+        <h2><i class="fa fa-envelope"></i> Entre em contato</h2>
+        <div class="info-list">
+          <p><i class="fa fa-envelope"></i> jvalentim532@gmail.com</p>
+          <p><i class="fa fa-map-marker"></i> Fortaleza-CE, Brasil</p>
+          <p>
+            <a href="https://github.com/joel908" target="_blank" style="color:#00e5ff;">
+              <i class="fa fa-github"></i> GitHub
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/joel-valentim/" target="_blank" style="color:#00e5ff;">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulário com FormSubmit -->
+      <div class="card show" style="margin-top: 24px;">
+        <h2><i class="fa fa-paper-plane"></i> Envie uma mensagem</h2>
+
+        <form
+          action="https://formsubmit.co/jvalentim532@gmail.com"
+          method="POST"
+          id="contact-form"
+          novalidate
+        >
+          <!-- Configurações do FormSubmit -->
+          <input type="hidden" name="_subject" value="📬 Novo contato pelo portfólio!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Após envio, redireciona para a página de agradecimento -->
+          <input type="hidden" name="_next" value="https://joel908.github.io/obrigado.html">
+
+          <!-- Honeypot antispam -->
+          <input type="text" name="_honey" style="display:none">
+
+          <label class="form-label">Nome</label>
+          <input
+            class="form-input"
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome completo"
+          >
+          <span class="error-msg" id="nome-error">Informe seu nome (mínimo 2 caracteres).</span>
+
+          <label class="form-label">E-mail</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+          >
+          <span class="error-msg" id="email-error">Informe um e-mail válido.</span>
+
+          <label class="form-label">Mensagem</label>
+          <textarea
+            class="form-input"
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Escreva sua mensagem..."
+          ></textarea>
+          <span class="error-msg" id="mensagem-error">Informe sua mensagem (mínimo 10 caracteres).</span>
+
+          <button type="submit" class="btn-submit">
+            <i class="fa fa-paper-plane"></i> Enviar mensagem
+          </button>
+
+          <div id="form-feedback"></div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Minhas Redes Sociais</p>
+    <a href="https://github.com/joel908" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/joel-valentim/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <p class="footer-copy">Portfólio — Joel Cavalcante © 2026</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
