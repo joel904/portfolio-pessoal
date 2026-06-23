@@ -24,30 +24,15 @@ A navegação do portfólio está dividida nas seguintes páginas principais:
 - `styles.css`: Arquivo unificado contendo toda a estilização e sistema de cores das páginas.
 - `scripts.js`: Arquivo que centraliza os scripts do site (tema, animação das barras de progresso e validação do formulário).
 
+
 ## ✨ Funcionalidades em Destaque
 
 1. **Tema Dinâmico (Dark / Light Mode):** O usuário pode alternar entre o tema claro e escuro clicando no botão na barra de navegação. A preferência fica salva no `localStorage` do navegador, mantendo o tema selecionado mesmo ao recarregar a página.
+
 2. **Animação das Barras de Skill:** As barras que demonstram a proficiência em linguagens de programação e idiomas são animadas dinamicamente ao carregar a página.
+
 3. **Validação de Formulário Front-end:** O formulário de contato possui checagens em tempo real para os campos de nome, e-mail e mensagem. Mensagens de erro aparecem caso alguma regra não seja atendida.
+
 4. **Integração de Contato Direto:** O formulário envia o conteúdo preenchido diretamente para o e-mail via `FormSubmit`.
 
-## ⚙️ Como Executar Localmente
 
-Para rodar este projeto em sua máquina local, você não precisa de nenhum ambiente complexo:
-
-1. Faça o clone do repositório:
-   ```bash
-   git clone https://github.com/joel908/[NOME_DO_REPOSITORIO].git
-   ```
-2. Abra a pasta do projeto.
-3. Você pode simplesmente abrir o arquivo `sobre.html` no seu navegador de preferência, ou iniciar um servidor local rápido.
-
-**Para iniciar um servidor local (Recomendado):**
-Se você tiver o Node.js instalado, abra o terminal na pasta do projeto e execute:
-```bash
-npx http-server -p 8080
-```
-Em seguida, acesse `http://localhost:8080/sobre.html` no seu navegador.
-
----
-**Desenvolvido por Joel Cavalcante © 2026**
